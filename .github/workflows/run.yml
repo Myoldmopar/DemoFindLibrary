@@ -14,4 +14,4 @@ jobs:
     - name: Do stuff
       run: |
         VERSION_STRING=$(grep VERSION somefile.py | cut -d= -f2 | xargs)
-        echo "Got a version string: ${VERSION_STRING}
+        echo "Got a version string: ${VERSION_STRING}"
