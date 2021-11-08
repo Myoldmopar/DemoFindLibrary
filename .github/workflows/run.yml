@@ -11,3 +11,7 @@ jobs:
         python-version: 3.7
     - name: Run the Quick Test
       run: python3 main.py
+    - name: Do stuff
+      run: |
+        VERSION_STRING=$(grep VERSION somefile.py | cut -d= -f2 | xargs)
+        echo "Got a version string: ${VERSION_STRING}
